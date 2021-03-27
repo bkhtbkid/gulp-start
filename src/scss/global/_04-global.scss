@@ -15,7 +15,22 @@ body {
 	position: relative;
 }
 
-body {}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+ul{
+	padding: 0;
+}
+
+a{
+	color: #000;
+	text-decoration: none;
+}
 
 ul,
 ol,
@@ -37,6 +52,13 @@ input:focus {
 
 button {
 	@include no-btn;
+}
+
+.container{
+	width: 75%;
+	position: relative;
+	left: 0;
+	min-height: 100%;
 }
 
 .flex {

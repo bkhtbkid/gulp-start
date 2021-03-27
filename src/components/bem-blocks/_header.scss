@@ -1,0 +1,73 @@
+.header {
+  position: fixed;
+  right: 0;
+  width: 25%;
+  padding-left: 20px;
+  z-index: 5;
+  &__wrapper {
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    width: 25%;
+    padding-left: 20px;
+  }
+
+  &__title {
+    font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    font-size: calc(16px + 5 * ((100vw - 320px) / (1280 - 320)));
+    margin-bottom: 50px;
+  }
+
+  &__contacts {
+    margin-top: 40px;
+  }
+
+  &__contact-link {
+    padding-left: 30px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 4px;
+      background-image: url('../../img/instagram.svg');
+      width: 24px;
+      height: 24px;
+      @include bg(cover);
+    }
+  }
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.menu-list {
+  width: 200px;
+  &__item {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all .3s;
+    font-weight: 700;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    & a{
+      transition: all .3s;
+    }
+    & a:hover{
+      color: #fff;
+    }
+  }
+  &__item-link {
+    padding: 15px 10px;
+    display: block;
+  }
+}

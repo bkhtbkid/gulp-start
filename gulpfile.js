@@ -341,7 +341,7 @@ gulp.task('server_html', () => {
 		browser: 'chrome',
 		logPrefix: 'BS-HTML:',
 		logLevel: 'info',
-		open: false
+		open: true
 	})
 });
 
